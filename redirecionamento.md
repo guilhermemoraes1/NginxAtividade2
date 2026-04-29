@@ -19,11 +19,14 @@ ln -s /etc/nginx/sites-available/minhaappweb20252.conf /etc/nginx/sites-enabled/
 
 vim nginx.conf 
 
-	#user www-data;
-	user root;
+```
+#user www-data;
+user root;
+```
 
 vim sites-available/minhaappweb20252.conf
 
+```
 server {
     listen 80;                          # Listen for HTTP traffic on port 80
     server_name _; # Domains this block handles
@@ -38,7 +41,7 @@ server {
     }
 
 }
-
+```
 
 systemctl stop nginx
 
